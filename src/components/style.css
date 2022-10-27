@@ -18,7 +18,8 @@ body{
 
 }
 .left-content{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
     grid-gap: 2rem;
 }
@@ -50,7 +51,7 @@ body{
     background-color: crimson;
     color: aliceblue;
     padding: 0.5rem;
-    font-size: 12px;
+    font-size: 8px;
     border-radius: 8px;
 
 }
