@@ -13,22 +13,23 @@ body{
     padding-top: 100px;
     display: flex;
 }
-.left-content, .right-content{
+/* .left-content, .right-content{
     flex-basis: 50%;
 
-}
+} */
 .left-content{
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
-    grid-gap: 2rem;
+    grid-gap: 3rem;
+    
 }
 .right-content{
-    width: 50%;
+    width: 100%;
     text-align: center;
     color: black;
-    position: fixed;
-    top: 100px;
+    position: sticky;
+    top: 10px;
     right: 10px;
 
 }
@@ -36,6 +37,7 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    background-color: black;
 
 }
 .abilities{
@@ -48,6 +50,23 @@ body{
 
 }
 .abilities .group{
+    background-color: darkolivegreen;
+    color: aliceblue;
+    padding: 0.5rem;
+    font-size: 8px;
+    border-radius: 8px;
+
+}
+.types{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+.types .group{
     background-color: crimson;
     color: aliceblue;
     padding: 0.5rem;
@@ -55,9 +74,14 @@ body{
     border-radius: 8px;
 
 }
-
 .base-stat{
-   margin-top: 2rem;
+   margin-top: 1rem;
+   background-color: crimson;
+   color: aliceblue;
+   font-size: 12px;
+   gap: 1rem;
+  
+
 
 }
 
@@ -91,3 +115,73 @@ body{
     border-radius: 8px;
 
 }
+.pokeinfo{
+    background-color: aliceblue;
+}
+.pokeinfo h2{
+  font-size: small;
+
+}
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .buttonStyle {
+    background: darkolivegreen;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
